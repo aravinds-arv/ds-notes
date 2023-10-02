@@ -22,7 +22,7 @@ jobs:
             mkdocs-material-
       - run: pip install \
               mkdocs-material \
-              mkdocs-exec[ansi] \
+              markdown-exec[ansi] \
               mkdocs-video \
               mkdocs-glightbox \
               mkdocs-git-revision-date-localized-plugin
