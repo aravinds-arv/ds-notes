@@ -6,7 +6,7 @@ theme:
     - navigation.tabs
     - navigation.indexes
     - navigation.footer
-    - toc.integrate
+    - toc.follow
     - navigation.top
     - search.suggest
     - content.tabs.link
@@ -87,8 +87,12 @@ plugins:
   - glightbox
   - mkdocs-video:
       css_style:
-          width: 100%
-          height: 44.344vw
+          position: "absolute"
+          width: "100%"
+          height: "100%"
+
+extra_css:
+  - stylesheets/extra.css
 
 extra_javascript:
   - javascripts/mathjax.js
