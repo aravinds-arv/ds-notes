@@ -12,6 +12,8 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - content.action.edit
+    - content.action.view
   language: en
   palette:
     # Palette toggle for light mode
@@ -51,12 +53,9 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - attr_list
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:materialx.emoji.twemoji 
-  #     emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.arithmatex:
-      generic: true
-  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - md_in_html
 
 extra:
@@ -80,8 +79,6 @@ repo_name: aravinds-arv/ds-notes
 edit_uri: edit/main/docs/
 
 plugins:
-  - git-revision-date-localized:
-      enable_creation_date: true
   - search
   - markdown-exec
   - glightbox
@@ -95,7 +92,6 @@ extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
-  - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
